@@ -1,0 +1,149 @@
+body {
+	width: 900px; /* Set the width of the page */
+	margin: 0 auto; /* Center the content */
+	background: #cbe3eb; /* Set the color of the background */
+	font-family: 'Ubuntu', helvetica, sans-serif; /* Set font-family and backups */
+}
+
+/* ---Header start--- */
+header {
+	border-bottom: 1px solid #666; /* Sets a thin bottom border to all header elements */
+}
+
+h1 {
+	text-transform: uppercase; /* All H1's in uppercase */
+	font-weight: 700; /* And make them bold */
+	font-size: 24px; /* A bit larger than default */
+	color: #444; /* Text should be quite dark grey */
+	text-align: center; /* Text should be centered */
+}
+
+/* ---Section start--- */
+section p, ol, .bg {
+	background: #dedede; /* Grey background */
+	padding: 20px; /* Some padding around all content */
+	box-shadow: 4px 4px 0 #444; /* Adds a grey shadow to the elements */
+	border-radius: 8px; /* Corners should be rounded on these elements */ 
+	line-height: 140%; /* Some extra line-height for readability */
+	font-size: 18px; /* I like my text a bit larger */
+	min-height: 250px; /* Makes sure main content on all pages have at least 250px height in order to have links placed in the same place vertically, at least when we're thin on content */
+}
+
+nav, .back, header, section p, ol, .bg {
+	margin-bottom: 40px; /* Some spacing for content following these elements */
+}
+
+/* ---Navigation stuff start--- */
+.back a {
+	color: #999;
+}
+
+.back a:visited {
+	color: #444;
+	text-decoration: none;
+}
+.back a:hover {
+	color: #000;
+}
+
+nav a {
+	text-decoration: none; /* No decoration on navigation links */
+	margin-right: 8px; /* And a little bit of margin between them */
+}
+
+.button {
+	background: #dedede; /* Almost white background */
+	box-shadow: 2px 2px 0 #333; /* Some shadow to give the buttons a little 3D feel */
+	padding: 8px 20px; /* Make some room around the text in the buttons */
+	color: #333; /* Dark grey text */
+	text-transform: uppercase; /* All uppercase */
+	font-weight: 700; /* Bold text */
+	border-radius: 20px; /* Rounded corners on buttons */ 
+}
+
+.button:hover {
+	background: #c7c7c7; /* Make the background on buttons grey when hovered */
+	transition: .4s; /* Make the hover effect fade in. No vendor prefixes added since support is good in modern 
+	browsers and this transition isn't crucial for any functionality */
+}
+
+.button:active {
+	margin: 2px 6px 0 2px; /* Adjusts the margins on the buttons when clicked in order to make them stay in place */
+	box-shadow: none; /* Removes the shadow to complete the 3D effect */
+}
+
+/* ---Typography, lists and table start--- */
+#punch {
+	font-weight: 400; /* Normal font weight */
+	font-style: italic; /* Italic */
+}
+
+p {
+	margin: 0 0 20px 0;
+}
+
+p span {
+	text-decoration: underline; /* Makes all spans within paragraphs underlined */
+	font-style: normal; /*Sets the font style back to normal instead of italic */
+}
+
+ol {
+	list-style-type: decimal-leading-zero;
+	list-style-position: inside;
+	text-align: center;
+}
+
+ol li:nth-child(2n+2) { /* Gives every other list item a darker grey color, starting with the second one */
+	background: #cccccc;
+}
+
+ol li:nth-child(2n+1) { /* And then all the other gets a lighter color, same logic as above but starting with the first item */
+	background: #e6e6e6;
+}
+
+ul {
+	margin: 0;
+	padding: 0;
+}
+ul li {
+	display: inline;
+}
+
+table {
+	border: 2px solid black;
+	border-spacing: 0;
+	margin: 0 auto;
+}
+
+td {
+	border: 1px solid #111;
+	padding: 4px 16px;
+}
+
+table tr:nth-child(2n+1) {
+	background: #999;
+}
+
+/* ---Images start--- */
+img {
+	float: left;
+}
+.bg img {
+	border-radius: 50%;
+	margin-right: 130px;
+}
+
+.bg img:nth-child(3n+3) {
+	margin-right: 0; /* Removes margin-right on every third image within an element with the class .bg */
+}
+
+/* ---Footer start--- */
+footer {
+	border-top: 1px solid #666;
+	height: 200px;
+	padding: 20px;
+}
+
+footer img {
+	margin-right: 20px;
+}
